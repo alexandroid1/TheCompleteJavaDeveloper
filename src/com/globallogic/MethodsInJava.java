@@ -8,14 +8,12 @@ public class MethodsInJava {
     }
 
     public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
-
         if (gameOver) {
             int finalScore = score + (levelCompleted * bonus);
             finalScore += 1000;
             System.out.println("your final score was " + finalScore);
             return finalScore;
-        } else {
-            return -1;
         }
+        return -1;
     }
 }
