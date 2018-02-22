@@ -6,6 +6,7 @@ public class MethodOverloading {
         System.out.println("New score is " + newScore);
         calculateScore(75);
         calculateScore();
+        calcFeetAndInchesToCentimeters(6,0);
     }
 
     public static int calculateScore(String playerName, int score){
@@ -30,7 +31,7 @@ public class MethodOverloading {
 
         double centimeters = (feet * 12) * 2.54;
         centimeters += inches * 2.54;
-        System.out.println( feet + " feet, " + " inches = " + centimeters + " cm");
+        System.out.println( feet + " feet, " + inches + " inches = " + centimeters + " cm");
         return centimeters;
     }
 
